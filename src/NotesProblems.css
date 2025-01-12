@@ -1,0 +1,161 @@
+/* Main Container */
+
+.notes-page {
+    position: relative;
+    padding: 20px;
+    overflow: hidden;
+}
+
+.main-container {
+    font-family: 'Arial', sans-serif;
+    background-color: #abc5ec;
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 80px auto 0;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: filter 0.3s ease;
+}
+
+.main-container.blurred {
+    filter: blur(5px);
+}
+
+
+/* Headline */
+
+.headline {
+    font-size: 36px;
+    font-weight: bold;
+    color: #060d5b;
+    text-align: center;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.headline:hover {
+    color: #457199;
+    transform: scale(1.1);
+}
+
+
+/* Section Styling */
+
+.section {
+    margin-bottom: 30px;
+    padding: 20px 0;
+}
+
+.row-heading {
+    font-size: 28px;
+    color: #246dc0;
+    font-weight: bold;
+    border-bottom: 2px solid #4a90e2;
+    display: inline-block;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    width: 100%;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.row-heading:hover {
+    color: #0611a9;
+    transform: scale(1.05);
+}
+
+
+/* Card Container */
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.box {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    width: 250px;
+    height: 180px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.box:hover {
+    transform: scale(1.08);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    background-color: #f0f4f8;
+}
+
+.title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+    transition: color 0.3s ease;
+}
+
+.title:hover {
+    color: #6327d4;
+}
+
+.topic {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.4;
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+}
+
+.box:hover .topic {
+    opacity: 1;
+}
+
+
+/* Loading Spinner */
+
+.loading-spinner {
+    font-size: 1.2rem;
+    color: #007bff;
+    margin: 1rem 0;
+}
+
+
+/* Responsive Layouts */
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .box {
+        width: 90%;
+        max-width: 320px;
+    }
+}
+
+@media (max-width: 480px) {
+    .headline {
+        font-size: 28px;
+    }
+    .row-heading {
+        font-size: 24px;
+    }
+    .box {
+        width: 100%;
+    }
+}

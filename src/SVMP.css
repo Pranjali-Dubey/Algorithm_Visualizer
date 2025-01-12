@@ -1,0 +1,49 @@
+/* PythonCode.css */
+
+.code-container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 20px auto;
+    background-color: #f7f7f7;
+    /* White background */
+    /* Light border */
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.code-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.code-header h3 {
+    font-size: 24px;
+    color: #333;
+}
+
+.code-box {
+    /* White background */
+    color: #333;
+    /* Black text color */
+    border-radius: 8px;
+    padding: 15px;
+    margin-top: 10px;
+    overflow-x: auto;
+    border: 1px solid #ddd;
+    /* Light border for code box */
+}
+
+code {
+    font-family: 'Source Code Pro', monospace;
+    font-size: 16px;
+    white-space: pre-wrap;
+    /* Ensure code wraps properly */
+}
+
+pre {
+    margin: 0;
+    background-color: transparent;
+    /* Remove background color */
+}

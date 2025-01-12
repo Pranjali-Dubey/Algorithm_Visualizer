@@ -1,0 +1,816 @@
+/* General Styles */
+
+.homepage {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Hero Section */
+
+.hero-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    padding: 30px 50px;
+    color: white;
+    position: relative;
+    overflow: hidden;
+    animation: fadeIn 1.5s ease-in-out;
+    z-index: 1;
+    background: url('path-to-your-hero-background-image.jpg') no-repeat center center/cover;
+}
+
+.hero-content {
+    flex: 1;
+    max-width: 500px;
+    padding-right: 20px;
+    animation: slideIn 1s ease;
+}
+
+.hero-title {
+    font-size: 48px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    color: rgba(0, 0, 0, 0.706);
+    animation: fadeInUp 1s ease;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.hero-subtitle {
+    font-size: 24px;
+    margin-bottom: 30px;
+    font-style: italic;
+    animation: fadeInUp 1s ease;
+    color: rgba(0, 0, 0, 0.706);
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.btn-primary {
+    background-color: #99d5df;
+    color: #3498db;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #2980b9;
+    color: white;
+    transform: scale(1.05);
+}
+
+.hero-image-wrapper {
+    flex: 1;
+    max-width: 600px;
+    position: relative;
+}
+
+.hero-image {
+    width: 100%;
+    height: auto;
+    max-height: 500px;
+    border-radius: 10px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    object-fit: cover;
+    animation: zoomIn 3s ease-in-out infinite alternate;
+}
+
+
+/* Topics Section */
+
+.topics-section {
+    padding: 60px 0;
+    background-color: #99d5df;
+}
+
+.topics-title {
+    font-size: 36px;
+    margin-bottom: 40px;
+    font-weight: 600;
+    animation: fadeInUp 1.5s ease-in-out;
+}
+
+
+/* Flex Layout for Cards in One Row */
+
+.card-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    /* Reduced gap for better spacing */
+    padding: 0 20px;
+    overflow-x: auto;
+    /* Allows horizontal scrolling if cards overflow */
+    flex-wrap: nowrap;
+    /* Prevent cards from wrapping to a new line */
+}
+
+
+/* Card Styles */
+
+.card {
+    position: relative;
+    background-color: #ffffff;
+    padding: 15px;
+    /* Reduced padding */
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    /* Ensures cards stay in one row */
+    width: 250px;
+    /* Reduced width for smaller cards */
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+}
+
+.card-image {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    /* Reduced margin */
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.card-image:hover {
+    transform: scale(1.1);
+    filter: brightness(1.2);
+}
+
+.card-title {
+    font-size: 22px;
+    /* Reduced font size */
+    font-weight: bold;
+    margin-bottom: 12px;
+    /* Reduced margin */
+    color: #3498db;
+    text-transform: uppercase;
+}
+
+.card-text {
+    font-size: 14px;
+    /* Reduced font size */
+    margin-bottom: 15px;
+    /* Reduced margin */
+    color: #666;
+}
+
+.btn-card {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    /* Reduced padding */
+    border-radius: 5px;
+    font-size: 14px;
+    /* Reduced font size */
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-card:hover {
+    background-color: #2980b9;
+    transform: scale(1.1);
+}
+
+
+/* Features Section */
+
+.features-section {
+    padding: 60px 0;
+    background-color: #bbe7e7;
+}
+
+.features-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+
+/* Feature Card Styling */
+
+.feature-card {
+    width: 250px;
+    padding: 40px;
+    border-radius: 15px;
+    background-color: #ffffff;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    position: relative;
+    margin-top: 40px;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+
+/* Hover Effect: Scale, Shadow, Color, Border Radius */
+
+.feature-card:hover {
+    transform: translateY(-12px) scale(1.06);
+    /* Smoother upward movement with slight scaling */
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    /* Enhanced shadow for a more dramatic effect */
+    background-color: #e3f2fd;
+    border-radius: 20px;
+    /* Slightly more rounded border */
+}
+
+
+/* Hover Effect: Icon Scaling and Color Change */
+
+.feature-card:hover .feature-icon {
+    transform: scale(1.4);
+    /* Increased icon size */
+    color: #3498db;
+    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+    /* Smooth transition */
+}
+
+
+/* Title Styling */
+
+.feature-card h3 {
+    font-size: 22px;
+    color: #333;
+    margin-bottom: 15px;
+    font-weight: 600;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    transition: all 0.3s ease-in-out;
+}
+
+
+/* Hover Effect: Title Color Change */
+
+.feature-card:hover h3 {
+    color: #1e88e5;
+    /* Change to a deeper blue on hover */
+    transform: translateY(-5px);
+    /* Slightly lift the title for added interactivity */
+}
+
+
+/* Description Text Styling */
+
+.feature-card p {
+    color: #777;
+    font-size: 15px;
+    opacity: 0;
+    transform: translateY(15px);
+    transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+
+/* Hover Effect: Description Fade-in */
+
+.feature-card:hover p {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+/* Feature Icon Styling */
+
+.feature-icon {
+    font-size: 45px;
+    color: #3498db;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+
+/* Button Styling (If present) */
+
+
+/* Button Styling */
+
+.feature-card .btn-learn-more {
+    display: inline-block;
+    padding: 12px 24px;
+    border-radius: 30px;
+    /* More rounded button edges */
+    background-color: #3498db;
+    color: white;
+    font-size: 16px;
+    text-decoration: none;
+    font-weight: 500;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Button Hover Effect */
+
+.feature-card:hover .btn-learn-more {
+    background-color: #1e88e5;
+    transform: translateY(-3px) scale(1.05);
+    /* Slight upward movement and scaling */
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+    /* Enhanced shadow for depth */
+}
+
+
+/* Button Hover Animation: Ripple Effect */
+
+.feature-card .btn-learn-more::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300%;
+    height: 300%;
+    background-color: rgba(255, 255, 255, 0.2);
+    /* Light white for ripple */
+    border-radius: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    animation: ripple-animation 0.6s linear;
+}
+
+
+/* Ripple Animation */
+
+@keyframes ripple-animation {
+    to {
+        transform: translate(-50%, -50%) scale(1);
+        opacity: 0;
+    }
+}
+
+
+/* Button Focus State */
+
+.feature-card .btn-learn-more:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(56, 152, 255, 0.4);
+    /* Subtle blue outline */
+}
+
+
+/* Responsive Button Adjustments */
+
+@media (max-width: 768px) {
+    .feature-card .btn-learn-more {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+}
+
+
+/* Responsive Adjustments */
+
+@media (max-width: 768px) {
+    .features-container {
+        justify-content: center;
+    }
+    .feature-card {
+        width: 90%;
+        margin: 10px 0;
+    }
+}
+
+
+/* Title Styling */
+
+.feature-card h3 {
+    font-size: 22px;
+    color: #3498db;
+    margin-bottom: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+
+/* Hover Effect: Title Color Change */
+
+.feature-card:hover h3 {
+    color: #1e88e5;
+    transform: translateY(-5px);
+}
+
+
+/* Description Text Styling */
+
+.feature-card p {
+    color: #666;
+    font-size: 16px;
+    margin-bottom: 20px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+
+/* Hover Effect: Show Text with Animation */
+
+.feature-card:hover p {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+
+/* Feature Icon Styling */
+
+.feature-icon {
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: #3498db;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+
+/* Button Hover Effect */
+
+.feature-card:hover .btn-learn-more {
+    background-color: #1e88e5;
+    color: white;
+    transform: scale(1.1);
+}
+
+
+/* General Button Styles */
+
+.btn-learn-more {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #3498db;
+    color: white;
+    font-size: 16px;
+    text-decoration: none;
+    margin-top: 15px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+
+/* Hover Effect for Button */
+
+.feature-card:hover .btn-learn-more {
+    background-color: #1e88e5;
+    color: white;
+    transform: scale(1.1);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+
+/* Feature Icon Animation */
+
+.feature-icon {
+    font-size: 40px;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.feature-icon:hover {
+    color: #1e88e5;
+    transform: scale(1.15) rotate(10deg);
+}
+
+
+/* Interactive Effect for Learn More Button */
+
+.btn-learn-more {
+    display: inline-block;
+    margin-top: 15px;
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.feature-card:hover .btn-learn-more {
+    background-color: #1e88e5;
+    transform: scale(1.1);
+}
+
+.btn-learn-more:hover {
+    background-color: #1565c0;
+}
+
+
+/* Keyframes for Icon Pulse Animation */
+
+@keyframes pulse {
+    0%,
+    100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+}
+
+
+/* Apply Pulse Animation to Icons */
+
+.feature-icon {
+    animation: pulse 2s infinite;
+}
+
+
+/* General Section Styling */
+
+section {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #f0f3f6;
+}
+
+
+/* Testimonials Section */
+
+.testimonials-section {
+    background-color: #8dc2e6;
+}
+
+.testimonials-section h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+    color: #3498db;
+}
+
+.testimonial-card {
+    background: #f9f9f9;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 10px;
+    max-width: 400px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.testimonial-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.testimonial-card p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 10px;
+    font-style: italic;
+}
+
+.testimonial-card h4 {
+    font-size: 16px;
+    font-weight: bold;
+    color: #3498db;
+}
+
+
+/* FAQ Section */
+
+.faq-section h2 {
+    font-size: 32px;
+    color: #3498db;
+    margin-bottom: 30px;
+}
+
+.faq {
+    background-color: #e3f2fd;
+    padding: 20px;
+    margin: 10px auto;
+    border-radius: 8px;
+    max-width: 600px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.faq:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.faq h4 {
+    font-size: 20px;
+    color: #3498db;
+    margin-bottom: 10px;
+    cursor: pointer;
+    position: relative;
+}
+
+.faq p {
+    font-size: 16px;
+    color: #555;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+
+.faq:hover p {
+    max-height: 100px;
+    /* Adjust as needed */
+}
+
+
+/* Blog Section */
+
+.blog-section h2 {
+    font-size: 32px;
+    color: #3498db;
+    margin-bottom: 30px;
+}
+
+.blog-post {
+    background: #ffffff;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 10px;
+    max-width: 500px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.blog-post:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.blog-post h3 {
+    font-size: 24px;
+    color: #3498db;
+    margin-bottom: 10px;
+}
+
+.blog-post p {
+    color: #555;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.btn-read-more {
+    display: inline-block;
+    color: #3498db;
+    text-decoration: none;
+    padding: 8px 15px;
+    background-color: #e3f2fd;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-read-more:hover {
+    background-color: #3498db;
+    color: white;
+}
+
+
+/* Animation Keyframes */
+
+@keyframes slideIn {
+    from {
+        transform: translateX(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes zoomIn {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.05);
+    }
+}
+
+
+/* Footer Styling */
+
+.footer {
+    background-color: #2c3e50;
+    color: #fff;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.footer-logo {
+    flex: 1;
+    text-align: center;
+}
+
+.footer-logo img {
+    width: 50px;
+    margin-bottom: 10px;
+}
+
+.footer-logo p {
+    font-style: italic;
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    margin: 10px 0;
+}
+
+.footer-links ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.footer-links ul li a:hover {
+    color: #3498db;
+}
+
+.footer-contact {
+    flex: 1;
+    text-align: center;
+}
+
+.footer-contact h5 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.footer-contact p {
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+.footer-social {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.footer-social .social-icon {
+    font-size: 20px;
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+.footer-social .social-icon:hover {
+    color: #3498db;
+}
+
+.footer-bottom {
+    margin-top: 30px;
+    font-size: 14px;
+}
+
+.footer-bottom p {
+    color: #bbb;
+}

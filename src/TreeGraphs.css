@@ -1,0 +1,159 @@
+/* General Container */
+
+.tree-graph-container {
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+
+/* Hero Section */
+
+.tree-graph-hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #d0e7ff, #82b1ff);
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.tree-graph-hero-content {
+    max-width: 700px;
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.tree-graph-hero-content h1 {
+    font-size: 2.5rem;
+    color: #0d47a1;
+    margin-bottom: 20px;
+}
+
+.tree-graph-hero-content p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.cta-btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #1976d2;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-btn:hover {
+    background-color: #1565c0;
+}
+
+
+/* Concept Details */
+
+.tree-graph-concept-info-card {
+    margin: 40px 20px;
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.tree-graph-concept-info-card h2 {
+    font-size: 1.8rem;
+    color: #1976d2;
+    margin-bottom: 15px;
+}
+
+.tree-graph-concept-details p,
+.tree-graph-concept-steps {
+    font-size: 1rem;
+    color: #555;
+}
+
+.tree-graph-concept-steps li {
+    margin: 10px 0;
+}
+
+
+/* Algorithms Section */
+
+.tree-graph-algorithms-section {
+    padding: 50px 20px;
+    background: #e3f2fd;
+    text-align: center;
+}
+
+.tree-graph-algorithms-section h2 {
+    font-size: 2rem;
+    color: #1976d2;
+    margin-bottom: 30px;
+}
+
+.tree-graph-algorithm-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    justify-items: center;
+}
+
+.tree-graph-algorithm-card {
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tree-graph-algorithm-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.tree-graph-algorithm-card h3 {
+    font-size: 1.5rem;
+    color: #0d47a1;
+    margin-bottom: 10px;
+}
+
+.tree-graph-algorithm-card p {
+    font-size: 0.95rem;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.learn-more-btn {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #1976d2;
+    color: #ffffff;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease;
+}
+
+.learn-more-btn:hover {
+    background-color: #1565c0;
+}
+
+
+/* Responsive Design */
+
+@media (max-width: 768px) {
+    .tree-graph-hero-content h1 {
+        font-size: 2rem;
+    }
+    .tree-graph-hero-content p {
+        font-size: 0.95rem;
+    }
+    .cta-btn {
+        font-size: 0.9rem;
+    }
+    .tree-graph-algorithm-card {
+        padding: 20px;
+    }
+}

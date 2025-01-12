@@ -1,0 +1,78 @@
+.code-toggle-container {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #f4f4f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.language-tabs {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 15px;
+}
+
+.tab {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-right: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.tab.active {
+    background-color: #2980b9;
+    transform: scale(1.1);
+    /* Slight scaling effect for active button */
+}
+
+.tab:hover {
+    background-color: #2980b9;
+}
+
+.code-content {
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+    white-space: pre-wrap;
+    /* Allow code to wrap on smaller screens */
+    color: #333;
+}
+
+.code-box {
+    overflow-x: auto;
+    /* Allows horizontal scroll for long lines */
+    font-family: 'Courier New', Courier, monospace;
+}
+
+pre {
+    margin: 0;
+    font-size: 14px;
+}
+
+code {
+    color: #2c3e50;
+}
+
+
+/* Code Header Styles */
+
+.code-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.symbol {
+    font-size: 24px;
+    margin-right: 10px;
+    color: #34495e;
+}

@@ -1,0 +1,85 @@
+/* Navbar container */
+
+.navbar {
+    position: fixed !important;
+    top: 0 !important;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: #87CEEB;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.navbar:hover {
+    background-color: #6BB5DD;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+
+/* Navbar brand styling */
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    font-size: 26px;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+    transition: color 0.3s ease;
+}
+
+.navbar-brand:hover {
+    color: #E1F5FE;
+}
+
+
+/* Logo styling */
+
+.navbar-logo {
+    width: 40px;
+    /* Adjust size as needed */
+    height: 40px;
+    /* Adjust size as needed */
+    margin-right: 10px;
+    /* Space between logo and text */
+    border-radius: 4px;
+    /* Optional for rounded edges */
+    transition: transform 0.3s ease;
+}
+
+.navbar-logo:hover {
+    transform: scale(1.1);
+}
+
+
+/* Navbar toggler button */
+
+.navbar-toggler {
+    background-color: #fff;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.navbar-toggler:hover {
+    background-color: #e0e0e0;
+}
+
+
+/* Navbar links */
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #E1F5FE;
+}
+
+
+/* Remaining styles for dropdowns, search bar, and buttons */

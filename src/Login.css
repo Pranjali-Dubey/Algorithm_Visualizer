@@ -1,0 +1,205 @@
+/* 
+.card {
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+  }
+  
+  .bi {
+    margin-right: 5px;
+  }
+   */
+
+
+/* Container for the login page */
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #4c9af7, #2a6bf7, #1976d2);
+    background-size: 400% 400%;
+    animation: gradientBackground 8s ease infinite;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+
+/* Gradient background animation */
+
+@keyframes gradientBackground {
+    0%,
+    100% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+}
+
+
+/* Styling for the login card */
+
+.login-card {
+    width: 100%;
+    max-width: 400px;
+    background-color: rgba(255, 255, 255, 0.97);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    animation: formAppear 0.8s ease-out;
+    text-align: center;
+    position: relative;
+    transition: box-shadow 0.3s, transform 0.3s;
+}
+
+
+/* Form appearance animation */
+
+@keyframes formAppear {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* Title */
+
+.login-title {
+    font-size: 28px;
+    font-weight: bold;
+    color: #007bff;
+    margin-bottom: 30px;
+    text-align: center;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Input field styling */
+
+.form-control {
+    width: 100%;
+    padding: 16px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 2px solid transparent;
+    background-color: #f7f9fc;
+    color: #333;
+    transition: all 0.3s ease;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.form-control:focus {
+    border-color: #007bff;
+    background-color: #e7f1ff;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.3);
+}
+
+
+/* Button styling */
+
+.btn-success {
+    font-size: 16px;
+    padding: 10px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.btn-success:hover {
+    background-color: #005bb5;
+    box-shadow: 0 4px 10px rgba(0, 91, 181, 0.4);
+}
+
+
+/* Error message styling */
+
+.text-danger {
+    color: #dc3545;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+
+/* Floating labels */
+
+.floating-label {
+    position: absolute;
+    left: 18px;
+    top: 12px;
+    font-size: 16px;
+    color: #aaa;
+    background: rgba(255, 255, 255, 0.97);
+    padding: 0 5px;
+    transition: all 0.3s ease;
+    pointer-events: none;
+}
+
+.form-control:focus~.floating-label,
+.form-control:not(:placeholder-shown)~.floating-label {
+    top: -10px;
+    font-size: 13px;
+    color: #007bff;
+}
+
+
+/* Loading spinner */
+
+.loading-spinner {
+    border: 4px solid #e0e0e0;
+    /* Light gray for the outer circle */
+    border-top: 4px solid #007bff;
+    /* Blue for the spinner */
+    border-radius: 50%;
+    width: 30px;
+    /* Adjust size as needed */
+    height: 30px;
+    animation: spin 1s linear infinite;
+}
+
+
+/* Spinner animation */
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+/* Link styling */
+
+.text-decoration-none {
+    text-decoration: none;
+    color: #007bff;
+}
+
+.text-decoration-none:hover {
+    text-decoration: underline;
+}

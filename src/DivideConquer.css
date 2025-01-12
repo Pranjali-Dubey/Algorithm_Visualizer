@@ -1,0 +1,197 @@
+/* Container Styling */
+
+.divide-conquer-container {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #1a1a1a;
+    background-color: #f7f9fc;
+    padding: 0 10px;
+}
+
+
+/* Hero Section */
+
+.d-hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #d4e9e2, #7ec4c4);
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.d-hero-content {
+    max-width: 750px;
+    background: #fff;
+    padding: 50px;
+    border-radius: 15px;
+    box-shadow: 0 6px 30px rgba(0, 0, 0, 0.15);
+    animation: fadeIn 1.2s ease-out;
+}
+
+.d-hero-content h1 {
+    font-size: 2.8rem;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+.d-hero-content p {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 35px;
+}
+
+.cta-btn {
+    display: inline-block;
+    padding: 12px 28px;
+    background-color: #2a93a9;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    border-radius: 30px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.cta-btn:hover {
+    background-color: #2a93a9;
+    transform: translateY(-3px);
+}
+
+
+/* Concept Details Section */
+
+.d-concept-info-card {
+    margin: 50px 20px;
+    background: #fff;
+    padding: 45px;
+    border-radius: 15px;
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.1);
+    animation: slideUp 1.2s ease-out;
+}
+
+.d-concept-info-card h2 {
+    font-size: 2rem;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+.concept-details p,
+.concept-steps {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.6;
+}
+
+.concept-steps li {
+    margin: 12px 0;
+}
+
+
+/* Algorithms Section */
+
+.d-algorithms-section {
+    padding: 60px 20px;
+    background: #e8f4f0;
+    text-align: center;
+}
+
+.d-algorithms-section h2 {
+    font-size: 2.2rem;
+    color: #2c3e50;
+    margin-bottom: 40px;
+}
+
+.d-algorithm-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+    gap: 25px;
+    justify-items: center;
+}
+
+.d-algorithm-card {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.d-algorithm-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.d-algorithm-card h3 {
+    font-size: 1.6rem;
+    color: #2c3e50;
+    margin-bottom: 15px;
+}
+
+.d-algorithm-card p {
+    font-size: 0.95rem;
+    color: #666;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+.learn-more-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #2a93a9;
+    color: #fff;
+    border-radius: 25px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.learn-more-btn:hover {
+    background-color: #2a93a9;
+    transform: translateY(-3px);
+}
+
+
+/* Animations */
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideUp {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* Responsive Design */
+
+@media (max-width: 768px) {
+    .d-hero-content h1 {
+        font-size: 2.3rem;
+    }
+    .d-hero-content p {
+        font-size: 1rem;
+    }
+    .cta-btn {
+        font-size: 0.95rem;
+    }
+    .d-algorithm-card {
+        padding: 20px;
+    }
+}

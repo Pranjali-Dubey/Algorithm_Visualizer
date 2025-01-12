@@ -1,0 +1,187 @@
+/* Container Styling */
+
+.linked-list-container {
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+
+/* Hero Section */
+
+.ll-hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #1c647e, #3441d2);
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.ll-hero-content {
+    max-width: 700px;
+    background: white;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1.2s ease-out;
+}
+
+.ll-hero-content h1 {
+    font-size: 2.5rem;
+    color: #439ff6;
+    margin-bottom: 20px;
+}
+
+.ll-hero-content p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.cta-btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #1b47a0;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-btn:hover {
+    background-color: #1b47a0;
+}
+
+
+/* Concept Details Section */
+
+.ll-concept-info-card {
+    margin: 40px 20px;
+    background: #fff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    animation: slideUp 1.2s ease-out;
+}
+
+.ll-concept-info-card h2 {
+    font-size: 1.8rem;
+    color: #1b47a0;
+    margin-bottom: 15px;
+}
+
+.ll-concept-details p,
+.ll-concept-steps {
+    font-size: 1rem;
+    color: #555;
+    text-align: left;
+}
+
+.ll-concept-steps li {
+    margin: 10px 0;
+}
+
+
+/* Algorithms Section */
+
+.ll-algorithms-section {
+    padding: 50px 20px;
+    background: #a1c3dd;
+    text-align: center;
+}
+
+.ll-algorithms-section h2 {
+    font-size: 2rem;
+    color: #1b47a0;
+    margin-bottom: 30px;
+}
+
+.ll-algorithm-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    justify-items: center;
+}
+
+.ll-algorithm-card {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.ll-algorithm-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.ll-algorithm-card h3 {
+    font-size: 1.5rem;
+    color: #3835f2;
+    margin-bottom: 10px;
+}
+
+.ll-algorithm-card p {
+    font-size: 0.95rem;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.learn-more-btn {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #d32f2f;
+    color: #fff;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease;
+}
+
+.learn-more-btn:hover {
+    background-color: #b71c1c;
+}
+
+
+/* Animations */
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideUp {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* Responsive Design */
+
+@media (max-width: 768px) {
+    .ll-hero-content h1 {
+        font-size: 2rem;
+    }
+    .ll-hero-content p {
+        font-size: 0.95rem;
+    }
+    .cta-btn {
+        font-size: 0.9rem;
+    }
+    .ll-algorithm-card {
+        padding: 20px;
+    }
+}

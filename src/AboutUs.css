@@ -1,0 +1,309 @@
+/* Light and Dark Mode Styling */
+
+body.light {
+    background-color: #f8f9fa;
+    color: #333;
+    transition: background-color 0.5s ease, color 0.5s ease;
+    margin-top: 65px;
+}
+
+body.dark {
+    background-color: #121212;
+    color: #e0e0e0;
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.about-us-page {
+    transition: all 0.5s ease;
+}
+
+
+/* About Us Title */
+
+.about-us-title {
+    text-align: center;
+    padding: 40px 20px;
+    background: #4a90e2;
+    color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-us-title h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.about-us-title p {
+    font-size: 18px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.about-us-title:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+}
+
+
+/* Adjusted Mission and Vision Section */
+
+.mission-section,
+.vision-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+    margin: 10px 0;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.mission-section:hover,
+.vision-section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    background-color: #e0e0e0;
+}
+
+
+/* Card Styles */
+
+.card {
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    max-width: 1000px;
+    text-align: center;
+    padding: 30px;
+    margin: 10px;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.8s forwards;
+}
+
+.card:nth-child(even) {
+    animation-delay: 0.2s;
+}
+
+.card:nth-child(odd) {
+    animation-delay: 0.4s;
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+}
+
+
+/* Hover Effects for Cards */
+
+.card .icon {
+    font-size: 70px;
+    color: #3498db;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease;
+}
+
+.card:hover .icon {
+    transform: scale(1.2);
+}
+
+
+/* Titles */
+
+.card h2 {
+    font-size: 28px;
+    margin: 15px 0;
+    color: #333;
+    text-transform: uppercase;
+}
+
+
+/* Paragraphs */
+
+.card p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #555;
+}
+
+
+/* Values Section */
+
+.values-section {
+    padding: 70px 20px;
+    margin-top: 20px;
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+    background-color: #fafafa;
+    transition: background-color 0.3s ease;
+    background: linear-gradient(45deg, #a3c3d9, #a7d1ff, #2a9d8f);
+    background-size: 400% 400%;
+    animation: gradientAnimation 10s ease infinite;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.values-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+    justify-items: center;
+}
+
+.values-section h2 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+}
+
+
+/* Increased Icon Size */
+
+.values-grid .icon {
+    font-size: 60px;
+    color: #3498db;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+
+.values-grid .icon:hover {
+    transform: scale(1.2);
+}
+
+
+/* Card Flip Animation */
+
+.value-card {
+    width: 250px;
+    height: 300px;
+    perspective: 1000px;
+    transition: transform 0.5s ease;
+}
+
+.value-card .card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transform-style: preserve-3d;
+    transition: transform 0.6s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.value-card:hover .card-inner {
+    transform: perspective(1200px) rotateY(180deg);
+    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.3);
+}
+
+.card-front,
+.card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.card-front {
+    background-color: white;
+}
+
+.card-back {
+    background-color: #333;
+    transform: rotateY(180deg);
+    color: white;
+}
+
+.value-card h3 {
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.value-card p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+
+/* Footer */
+
+.footer {
+    padding: 40px 20px;
+    background-color: #222;
+    color: white;
+    text-align: center;
+    font-size: 16px;
+}
+
+.footer a {
+    color: #bbb;
+    margin: 0 10px;
+    padding: 5px 0;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.footer a:hover {
+    color: #fff;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+}
+
+
+/* Media Queries */
+
+@media (max-width: 768px) {
+    .about-us-title h1 {
+        font-size: 36px;
+    }
+    .about-us-title p {
+        font-size: 16px;
+    }
+    .mission-section,
+    .vision-section {
+        padding: 30px 20px;
+    }
+    .mission-section h2,
+    .vision-section h2 {
+        font-size: 28px;
+    }
+    .mission-section p,
+    .vision-section p {
+        font-size: 16px;
+    }
+    .values-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+}

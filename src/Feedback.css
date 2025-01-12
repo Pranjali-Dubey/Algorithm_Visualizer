@@ -1,0 +1,143 @@
+/* Main Feedback Page Styles */
+
+.feedback-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+    margin-top: 500px;
+    max-width: 800px;
+    margin-top: 80px;
+    margin-left: 250px;
+    background-color: #f5f8fc;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+    font-family: Arial, sans-serif;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.feedback-page:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+.feedback-title {
+    font-size: 36px;
+    color: #060d5b;
+    margin-bottom: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    position: relative;
+}
+
+.feedback-title::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 3px;
+    background-color: #4a90e2;
+    margin: 10px auto 0;
+}
+
+.feedback-subtitle {
+    font-size: 16px;
+    color: #4a90e2;
+    text-align: center;
+    margin-bottom: 30px;
+    transition: color 0.3s ease;
+}
+
+.feedback-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+}
+
+.feedback-form label {
+    font-size: 16px;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 5px;
+    transition: color 0.3s ease;
+}
+
+.feedback-form label:hover {
+    color: #4a90e2;
+}
+
+.feedback-form input,
+.feedback-form select,
+.feedback-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feedback-form input:focus,
+.feedback-form select:focus,
+.feedback-form textarea:focus {
+    border-color: #4a90e2;
+    box-shadow: 0 4px 8px rgba(74, 144, 226, 0.2);
+}
+
+.feedback-form textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+.submit-button {
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #457199;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: #1e5087;
+    transform: scale(1.05);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.submit-button:active {
+    transform: scale(0.98);
+    box-shadow: none;
+}
+
+
+/* Animation for Form Appearance */
+
+.feedback-form {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.6s forwards ease-in-out;
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* Responsive Adjustments */
+
+@media (max-width: 480px) {
+    .feedback-title {
+        font-size: 28px;
+    }
+    .feedback-subtitle {
+        font-size: 14px;
+    }
+}
